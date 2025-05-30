@@ -74,7 +74,7 @@ function App() {
     });
 
     pdf.addImage(imgData, 'PNG', 0, 0, 85, 55);
-    pdf.save('signature-numerique.pdf');
+    pdf.save('carte-visite.pdf');
   };
 
   const Header = () => (
@@ -93,7 +93,7 @@ function App() {
       </div>
       {/* Blue header section */}
       <div className="w-full bg-blue-600 h-16 flex items-center justify-center shadow-md">
-        <h1 className="text-white text-xl font-semibold">Générateur de Signatures Numériques FNM</h1>
+        <h1 className="text-white text-xl font-semibold">Générateur de Cartes de Visite FNM</h1>
       </div>
     </div>
   );
@@ -105,7 +105,7 @@ function App() {
       <div className="flex items-center justify-center p-4 pt-8">
 
         <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-          <h1 className="text-2xl font-bold text-gray-800 mb-6">Votre Signature Numérique</h1>
+          <h1 className="text-2xl font-bold text-gray-800 mb-6">Créer votre carte de visite</h1>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -161,7 +161,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       <Header />
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-start p-60">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
       {/* Carte de prévisualisation agrandie */}
       <div className="transform scale-[4] origin-center mb-20">
         <div 
